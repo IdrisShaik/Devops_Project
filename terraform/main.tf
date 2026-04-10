@@ -19,7 +19,7 @@ terraform {
   # WHY: Remote state backend prevents conflicts when multiple
   # engineers run Terraform simultaneously.
   backend "s3" {
-    bucket         = "devsecops-terraform-state"
+    bucket         = "devsecops-tf-state-idris"
     key            = "prod/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
